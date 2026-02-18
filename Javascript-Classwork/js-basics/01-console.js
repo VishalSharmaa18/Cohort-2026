@@ -31,4 +31,4 @@ let dnaMatches = 0;
 for (let index = 0; index < 1_00_000; index++) {
    dnaMatches++;  
 }
- console.timeEnd("time starts now")
+ console.timeEnd("time starts now");
