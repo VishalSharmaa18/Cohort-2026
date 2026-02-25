@@ -42,3 +42,7 @@ function anotherFunctionForClass(brewAndCount){
 }
 }
 
+//IFII
+(function() {
+    console.log("I run immediately!");
+})();
