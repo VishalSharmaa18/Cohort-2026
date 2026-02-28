@@ -13,5 +13,12 @@ function cookDish(ingredient,style){
 const sharmaJiKaKitchen = {name : "Sharma ji ka kitchen"};
 const guptaJiKaKitchen = {name : "Gupta ji ka kitchen"};
 
-console.log(cookDish.call(sharmaJiKaKitchen,"Paneer and Onion","Mexican Style"))
-console.log(cookDish.apply(guptaJiKaKitchen,["Soya chap marinate","Indian Style"]))
+console.log(cookDish.call(sharmaJiKaKitchen,"Paneer and Onion","Mexican Style"));
+console.log(cookDish.apply(guptaJiKaKitchen,["Soya chap marinate","Indian Style"]));
+
+function reportDelivery(location,status){
+return `${this.name} at ${location} : ${status}`
+}
+
+const reporter = reportDelivery.bind(sharmaJiKaKitchen)
+console.log(reporter("Jaipur","Open"));
